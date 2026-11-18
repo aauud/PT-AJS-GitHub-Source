@@ -1,0 +1,118 @@
+:root {
+    --ajs-red: #a32035;
+    --ajs-red-dark: #761c2d;
+    --ajs-red-light: #fbecef;
+    --ajs-red-border: #e8bdc5;
+
+    --ajs-red-rgb: 163, 32, 53;
+}
+
+/* Tombol utama */
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--ajs-red);
+    --bs-btn-border-color: var(--ajs-red);
+
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--ajs-red-dark);
+    --bs-btn-hover-border-color: var(--ajs-red-dark);
+
+    --bs-btn-active-bg: var(--ajs-red-dark);
+    --bs-btn-active-border-color: var(--ajs-red-dark);
+}
+
+/* Tombol garis luar */
+
+.btn-outline-primary {
+    --bs-btn-color: var(--ajs-red);
+    --bs-btn-border-color: var(--ajs-red);
+
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--ajs-red);
+    --bs-btn-hover-border-color: var(--ajs-red);
+}
+
+/* Utilitas warna Bootstrap */
+
+.text-primary {
+    color: var(--ajs-red) !important;
+}
+
+.bg-primary {
+    background-color: var(--ajs-red) !important;
+}
+
+.border-primary {
+    border-color: var(--ajs-red) !important;
+}
+
+.link-primary {
+    color: var(--ajs-red) !important;
+}
+
+.link-primary:hover {
+    color: var(--ajs-red-dark) !important;
+}
+
+/* Lencana utama */
+
+.badge.text-bg-primary {
+    background-color: var(--ajs-red) !important;
+}
+
+/* Navigasi */
+
+.navbar .nav-link:hover {
+    color: var(--ajs-red);
+}
+
+/* Tampilan fokus elemen formulir */
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--ajs-red-border);
+
+    box-shadow:
+        0 0 0 0.25rem rgba(var(--ajs-red-rgb), 0.15);
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+    flex-shrink: 0;
+}
+
+.page-content {
+    flex: 1 0 auto;
+    padding-bottom: 3rem;
+}
+
+   /* FOOTER */
+
+.site-footer {
+    background: linear-gradient(120deg, #641827, #8f2639);
+    color: #f8e9ec;
+    padding: 35px 0;
+}
+
+.site-footer a {
+    color: #fff !important;
+}
+
+.site-footer a:hover {
+    color: #ffdce2 !important;
+}
+
+.site-footer p {
+    margin-bottom: 5px;
+}
